@@ -29,13 +29,16 @@ body {
 }
 
 .vertical_nav_wrapper > ul {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	border-style: none;
 }
 .vertical_nav_wrapper > ul > li
 {
 	position:relative;
-	top: 10px;
-	margin-bottom: 10px;
+	width: 100%;
+	height: 8%;
 	border-color: #CCCCCC;
 	border-style: none none solid none;
 	border-width: 1px;
@@ -47,6 +50,158 @@ body {
 	text-align: center;
 }
 
+.custom_nav > li > a {
+	width: 100%;
+	height: 100%;
+}
+/*************************************
+			Message Bubble
+**************************************/
+.googleplus_bubble:hover:before {
+	content: "Google+";
+}
+.search_bubble:hover:before {
+	content: "Search";
+
+}
+.gmail_bubble:hover:before {
+	content: "Gmail";
+}
+.youtube_bubble:hover:before {
+	content: "Youtube";
+}
+.googlemap_bubble:hover:before {
+	content: "Maps";
+}
+.blogger_bubble:hover:before {
+	content: "Blogger";
+}
+.googleearth_bubble:hover:before {
+	content: "Earth";
+}
+.google_bubble:hover:before {
+	content: "Chrome";
+}
+.android_bubble:hover:before {
+	content: "Android";
+}
+.googlemusic_bubble:hover:before {
+	content: "Music";
+}
+.googlenews_bubble:hover:before  {
+	content: "News";
+
+}
+
+.googleplus_bubble:hover:before,
+.search_bubble:hover:before,
+.gmail_bubble:hover:before,
+.youtube_bubble:hover:before,
+.googlemap_bubble:hover:before,
+.blogger_bubble:hover:before,
+.googleearth_bubble:hover:before,
+.google_bubble:hover:before,
+.android_bubble:hover:before,
+.googlemusic_bubble:hover:before,
+.googlenews_bubble:hover:before 
+{
+	position:absolute;
+	top: 25%;
+	left: 100%;
+	margin-left: 25px;
+	z-index: 1;
+	opacity: 1;
+	padding: 5px;	
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #000000;	
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.googleplus_bubble:hover:after,
+.search_bubble:hover:after,
+.gmail_bubble:hover:after,
+.youtube_bubble:hover:after,
+.googlemap_bubble:hover:after,
+.blogger_bubble:hover:after,
+.googleearth_bubble:hover:after,
+.google_bubble:hover:after,
+.android_bubble:hover:after,
+.googlemusic_bubble:hover:after,
+.googlenews_bubble:hover:after 
+{
+	position:absolute;
+	content: "";
+	top: 35%;
+	left: 100%;
+}
+
+
+
+/********************
+		Color
+*********************/
+.googleplus_bubble:hover:before,
+.googlemap_bubble:hover:before,
+.android_bubble:hover:before 
+{
+	background-color: #5C87ED;
+}
+
+.search_bubble:hover:before,
+.blogger_bubble:hover:before,
+.googlemusic_bubble:hover:before
+ {
+	background-color: #E34363;
+}
+
+.gmail_bubble:hover:before,
+.googleearth_bubble:hover:before,
+.googlenews_bubble:hover:before 
+{
+	background-color: #F1C141;
+}
+
+.youtube_bubble:hover:before,
+.google_bubble:hover:before 
+{
+	background-color: #33AD51;
+}
+
+/********************
+	Pointer Color
+*********************/
+.googleplus_bubble:hover:after,
+.googlemap_bubble:hover:after,
+.android_bubble:hover:after
+{
+	border: 15px solid;
+	border-color: transparent #5C87ED transparent transparent;
+}
+
+.search_bubble:hover:after,
+.blogger_bubble:hover:after,
+.googlemusic_bubble:hover:after 
+{
+	border: 15px solid;
+	border-color: transparent #E34363 transparent transparent;	
+}
+
+.gmail_bubble:hover:after,
+.googleearth_bubble:hover:after,
+.googlenews_bubble:hover:after 
+{
+	border: 15px solid;
+	border-color: transparent #F1C141 transparent transparent;		
+}
+
+.youtube_bubble:hover:after,
+.google_bubble:hover:after
+{
+	border: 15px solid;
+	border-color: transparent #33AD51 transparent transparent;			
+}
 /*******************************************************************************************
 										Coloumn two
 ********************************************************************************************/
@@ -78,6 +233,7 @@ body {
 	top: 2.5%;
 	left: 5%;
 	background-color: #199797;
+	border-radius: 5px;
 }
 
 /********************************************
@@ -119,9 +275,38 @@ body {
 	height: 95%;
 	left: 10%;
 	top: 2.5%;
-	background-color: #FF6A33;
+	background-color: #E53935;
 }
 
+/****************************
+	Content Two Thumbnail
+*****************************/
+.content_two_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_two_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_two_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_two_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #B72E2A;
+	color: #FFFFFF;
+}
+.content_two_caption * {
+	margin-left: 10px;
+}
 /****************************
 		Content Three
 *****************************/
@@ -144,9 +329,37 @@ body {
 	height: 95%;
 	left: 10%;
 	top: 2.5%;
-	background-color: #19FAA4;
+	background-color: #A4C639;
 }
-
+/****************************
+	Content Three Thumbnail
+*****************************/
+.content_three_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_three_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_three_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_three_caption {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	background-color: #839E2E;
+	color: #FFFFFF;
+}
+.content_three_caption * {
+	margin-left: 10px;
+}
 /**************************************
 	Coloumn two row two column two
 ***************************************/
@@ -179,8 +392,38 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #8D1919;
+	background-color: #7F1616;
 }
+/****************************
+	Content Four Thumbnail
+*****************************/
+.content_four_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_four_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_four_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_four_caption {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	background-color: #661212;
+	color: #FFFFFF;
+}
+.content_four_caption * {
+	margin-left: 10px;
+}
+
 
 /****************************
 		Content Five
@@ -202,8 +445,39 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #FFFF33;
+	background-color: #FFD700;
 }
+
+/****************************
+	Content Five Thumbnail
+*****************************/
+.content_five_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_five_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_five_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_five_caption {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	background-color: #E6C200;
+	color: #FFFFFF;
+}
+.content_five_caption * {
+	margin-left: 10px;
+}
+
 /*******************************************************************************************
 										Coloumn three
 ********************************************************************************************/
@@ -235,8 +509,39 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #7EA8CA;
+	background-color: #87C0E4;
 }
+
+/****************************
+	Content Six Thumbnail
+*****************************/
+.content_six_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_six_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_six_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_six_caption {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 65%;
+	background-color: #6EA6CA;
+	color: #FFFFFF;
+}
+.content_six_caption * {
+	margin-left: 10px;
+}
+
 /****************************
 		Content Seven
 *****************************/
@@ -258,7 +563,37 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #58A279;
+	background-color: #62C28C;
+}
+
+/****************************
+	Content Seven Thumbnail
+*****************************/
+.content_seven_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_seven_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_seven_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_seven_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #4E9B70;
+	color: #FFFFFF;
+}
+.content_seven_caption * {
+	margin-left: 10px;
 }
 /****************************
 		Content Eight
@@ -280,7 +615,37 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #30307E;
+	background-color: #27275F;
+}
+
+/****************************
+	Content Eight Thumbnail
+*****************************/
+.content_eight_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_eight_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_eight_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_eight_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #14145A;
+	color: #FFFFFF;
+}
+.content_eight_caption * {
+	margin-left: 10px;
 }
 /*******************************************************************************************
 										Coloumn four
@@ -300,6 +665,16 @@ body {
 	width: 100%;
 	height: 45%;
 }
+.content_nine_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_nine_img > img {
+	position: relative;
+	top: 25%;
+}
 .content_nine_col {
 	position: absolute;
 	width: 100%;
@@ -314,6 +689,25 @@ body {
 	background-color: #FFB733;
 }
 
+/****************************
+	Content Nine Thumbnail
+*****************************/
+.content_nine_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_nine_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #E6A52E;
+	color: #FFFFFF;
+}
+.content_nine_caption * {
+	margin-left: 10px;
+}
 /****************************
 		Content Ten
 *****************************/
@@ -334,7 +728,37 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #3333D7;
+	background-color: #2962FF;
+}
+
+/****************************
+	Content Ten Thumbnail
+*****************************/
+.content_ten_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_ten_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_ten_img > img {
+	position: relative;
+	top: 25%;
+}
+.content_ten_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #214ECC;
+	color: #FFFFFF;
+}
+.content_ten_caption * {
+	margin-left: 10px;
 }
 /****************************
 		Content Eleven
@@ -344,6 +768,16 @@ body {
 	width: 100%;
 	height: 25%;
 	top: 75%;
+}
+.content_eleven_img {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	text-align: center;
+}
+.content_eleven_img > img {
+	position: relative;
+	top: 25%;
 }
 .content_eleven_col {
 	position: absolute;
@@ -357,5 +791,25 @@ body {
 	height: 95%;
 	left: 5%;
 	top: 2.5%;
-	background-color: #333333;
+	background-color: #424242;
+}
+
+/****************************
+	Content Eleven Thumbnail
+*****************************/
+.content_eleven_thumbnail {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.content_eleven_caption {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background-color: #212121;
+	color: #FFFFFF;
+}
+.content_eleven_caption * {
+	margin-left: 10px;
 }
