@@ -45,7 +45,7 @@ ________________________________________________________________________________
 	height: 100%;	
 }
 
-.vertical_nav_wrapper > ul > li > a > img
+.vertical_nav_wrapper > ul > li > a > picture > img
 {
 	position: absolute;
 	left: 25%;
@@ -226,10 +226,8 @@ ________________________________________________________________________________
 }
 @media (max-height: 319px)
 {
-	.vertical_nav_wrapper > ul > li > a > img
+	.vertical_nav_wrapper > ul > li > a > picture > img
 	{
-		width: 40%;
-		height: 70%;
 		top: 25%;
 	}	
 }
@@ -259,19 +257,17 @@ ________________________________________________________________________________
 		height: 5.5%;
 	}
 }
-/* Landscape phones */
-@media (min-height: 320px) and (max-height: 459px)
-{
+
+/* Landscape Iphones and other phones */
+@media (min-width: 480px) and (max-width: 736px) and (min-height: 320px) and (max-height: 414px)
+{	
 	.vertical_nav_wrapper > ul > li
 	{
-		height: 7.75%;
+		height: 8%;
 	}
-	
-	.vertical_nav_wrapper > ul > li > a > img
+	.vertical_nav_wrapper > ul > li > a > picture > img
 	{
-		width: 40%;
-		height: 75%;
-		top: 25%;
+		top: 0;
 	}	
 }
 /***************************************************************************************************************************
@@ -284,7 +280,12 @@ ________________________________________________________________________________
 	}
 	.vertical_nav_wrapper > ul > li
 	{
-		height: 5.5%;
+		height: 6%;
+	}
+	.vertical_nav_wrapper > ul > li > a > picture > img
+	{
+		top: 10%;
+		left: 10%;
 	}
 }
 /*************************************************************************************************************************** 
@@ -303,16 +304,29 @@ ________________________________________________________________________________
 }
 
 /* Landscape Nexus 7 Tablet */
-@media (min-width: 960px) and (max-width: 966px)
-{
-	
-	@media (min-height: 600px) and (max-height: 603px)
+@media (min-width: 960px) and (max-width: 966px) and (min-height: 600px) and (max-height: 603px)
+{	
+	.vertical_nav_wrapper > ul > li
 	{
-		.vertical_nav_wrapper > ul > li
-		{
-			height: 7.75%;
-		}
+		height: 7.75%;
 	}
+	
+	.vertical_nav_wrapper > ul > li > a > picture > img
+	{
+		top: 15%;
+		left: 30%;
+	}
+}
+
+/* Apple Ipad Landscape */
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 768px)
+{
+	.vertical_nav_wrapper > ul > li > a > picture > img
+	{
+		top: 10%;
+		left: 20%;
+	}
+
 }
 /*************************************************************************************************************************** 
 												Large desktops and laptops 
@@ -323,7 +337,13 @@ ________________________________________________________________________________
 	.vertical_nav_wrapper > ul > li
 	{
 		height: 8.75%;
-	}	
+	}
+	
+	.vertical_nav_wrapper > ul > li > a > picture > img
+	{
+		top: 25%;
+		left: 25%;
+	}
 }
 
 @media (min-width: 1200px) and (max-width: 1250px)
