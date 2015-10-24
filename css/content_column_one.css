@@ -159,6 +159,7 @@ __________________________________________________________
 	text-align: center;
 }
 
+
 .content_two_caption {
 	position: absolute;
 	width: 100%;
@@ -308,10 +309,10 @@ __________________________________________________________
 						All Content
 __________________________________________________________
 **********************************************************/
-.content_two_img > img,
-.content_three_img > img,
-.content_four_img > img,
-.content_five_img > img
+.content_two_img > picture > img,
+.content_three_img > picture > img,
+.content_four_img > picture > img,
+.content_five_img > picture > img
  {
 	position: relative;
 	top: 25%;
@@ -354,13 +355,11 @@ ________________________________________________________________________________
 	{
 		height: 45%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
 	{
-		width: 25%;
-		height: 75%;
 		top: 20%;
 	}
 	.content_two_caption,
@@ -409,14 +408,12 @@ ________________________________________________________________________________
 	{
 		height: 45%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
 	{	
-		width: 25%;
-		height: 75%;
-		top: 20%;
+		top: 15%;
 	}
 	.content_two_caption,
 	.content_three_caption,
@@ -480,13 +477,11 @@ ________________________________________________________________________________
 	{
 		height: 50%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
 	{	
-		width: 20%;
-		height: 75%;
 		top: 20%;
 	}
 	.content_two_caption,
@@ -522,14 +517,12 @@ ________________________________________________________________________________
 			float: left;
 		}
 		
-		.content_two_img > img,
-		.content_three_img > img,
-		.content_four_img > img,
-		.content_five_img > img
+		.content_two_img > picture > img,
+		.content_three_img > picture > img,
+		.content_four_img > picture > img,
+		.content_five_img > picture > img
 		{	
-			width: 25%;
-			height: 75%;
-			top: 20%;
+			top: 10%;
 		}
 		
 		.content_two_caption *, 
@@ -574,13 +567,11 @@ ________________________________________________________________________________
 	{
 		height: 50%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
 	{	
-		width: 30%;
-		height: 75%;
 		top: 20%;
 	}
 	.content_two_caption,
@@ -608,13 +599,11 @@ ________________________________________________________________________________
 		/**************************
 				All Content
 		***************************/
-		.content_two_img > img,
-		.content_three_img > img,
-		.content_four_img > img,
-		.content_five_img > img
+		.content_two_img > picture > img,
+		.content_three_img > picture > img,
+		.content_four_img > picture > img,
+		.content_five_img > picture > img
 		{	
-			width: 35%;
-			height: 75%;
 			top: 20%;
 		}
 	}
@@ -633,19 +622,17 @@ ________________________________________________________________________________
 		/**************************
 				All Content
 		***************************/
-		.content_two_img > img,
-		.content_three_img > img,
-		.content_four_img > img,
-		.content_five_img > img
+		.content_two_img > picture > img,
+		.content_three_img > picture > img,
+		.content_four_img > picture > img,
+		.content_five_img > picture > img
 		{	
-			width: 40%;
-			height: 75%;
 			top: 20%;
 		}
 	}
 }
-/*************************************************************************************************************************** 
-													Landscape tablets and medium desktops
+/**************************************************************************************************************************** 
+												Landscape tablets and medium desktops
 _____________________________________________________________________________________________________________________________
 *****************************************************************************************************************************/
 @media (min-width: 992px) and (max-width: 1199px) 
@@ -676,14 +663,7 @@ ________________________________________________________________________________
 	{
 		height: 50%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
-	{	
-		width: 15%;
-		height: 65%;
-	}
+	
 	.content_two_caption,
 	.content_three_caption,
 	.content_four_caption,
@@ -708,13 +688,11 @@ ________________________________________________________________________________
 		/**************************
 				All Content
 		***************************/
-		.content_two_img > img,
-		.content_three_img > img,
-		.content_four_img > img,
-		.content_five_img > img
+		.content_two_img > picture > img,
+		.content_three_img > picture > img,
+		.content_four_img > picture > img,
+		.content_five_img > picture > img
 		{	
-			width: 20%;
-			height: 75%;
 			top: 20%;
 		}
 	}
@@ -727,14 +705,12 @@ ________________________________________________________________________________
 		/**************************
 				All Content
 		***************************/
-		.content_two_img > img,
-		.content_three_img > img,
-		.content_four_img > img,
-		.content_five_img > img
+		.content_two_img > picture > img,
+		.content_three_img > picture > img,
+		.content_four_img > picture > img,
+		.content_five_img > picture > img
 		{	
-			width: 15%;
-			height: 65%;
-			top: 20%;
+			top: 15%;
 		}
 	}
 }
@@ -760,13 +736,12 @@ ________________________________________________________________________________
 	{
 		height: 47.5%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
 	{	
-		width: 25%;
-		height: 65%;
+		top: 10%;
 	}
 	.content_two_caption,
 	.content_three_caption,
@@ -785,6 +760,7 @@ ________________________________________________________________________________
 		font-size: 12px;
 	}
 }
+
 @media (min-width: 1501px) and (max-width: 1700px)
 {
 	.content_col_one
@@ -802,14 +778,7 @@ ________________________________________________________________________________
 	{
 		height: 50%;
 	}
-	.content_two_img > img,
-	.content_three_img > img,
-	.content_four_img > img,
-	.content_five_img > img
-	{	
-		width: 30;
-		height: 60%;
-	}
+
 	.content_two_caption,
 	.content_three_caption,
 	.content_four_caption,
@@ -818,7 +787,15 @@ ________________________________________________________________________________
 		height: 50%;
 		top: 50%;
 	}
-
+	
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
+	{
+		top: 15%;
+	}
+	
 	.content_two_caption *, 
 	.content_three_caption *,
 	.content_four_caption * ,
@@ -833,6 +810,14 @@ ________________________________________________________________________________
 	{
 		width: 50%;
 		height: 100%;
+	}
+	
+	.content_two_img > picture > img,
+	.content_three_img > picture > img,
+	.content_four_img > picture > img,
+	.content_five_img > picture > img
+	{
+		top: 25%;
 	}
 }
 
